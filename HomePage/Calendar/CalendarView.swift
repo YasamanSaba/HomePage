@@ -57,7 +57,7 @@ struct CalendarView: View {
                     Spacer()
                     HStack(spacing: geo.size.width * 0.5 * 0.01) {
                         ForEach(0..<7) { i in
-                            DayView(dayName: "FRI", dayNum: 8 + i , isCurrentDay: i == 0)
+                            DayView(dayName: "FRI", dayNum: 8 + i , isCurrentDay: i == 0, hasInterview: true, hasTask: true)
                         }
                     }
                     .padding(.top, geo.size.height * 0.1)
