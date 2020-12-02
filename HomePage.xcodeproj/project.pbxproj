@@ -390,9 +390,10 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"HomePage/Preview Content\"";
-				DEVELOPMENT_TEAM = 8W28R8275P;
+				DEVELOPMENT_TEAM = N9VZPP2C5Z;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = HomePage/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -411,9 +412,10 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"HomePage/Preview Content\"";
-				DEVELOPMENT_TEAM = 8W28R8275P;
+				DEVELOPMENT_TEAM = N9VZPP2C5Z;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = HomePage/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

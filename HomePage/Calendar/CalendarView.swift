@@ -37,31 +37,30 @@ struct CalendarView: View {
     var body: some View {
         GeometryReader { geo in
             ZStack {
-                RoundedRectangle(cornerRadius: 9)
-                    .fill(ColorPalette.calendarBackground)
+                Image("CalendarBackground")
+                    .resizable()
                 HStack {
                     VStack(alignment: .leading) {
                         Text("NOVEMBER")
                             .foregroundColor(Color("CalendarMonthName"))
                             .font(Font.custom("Gilroy-Bold", size: 13))
-                            
                             .lineLimit(1)
                         
                         
                         Text("2020")
                             .foregroundColor(Color("CalendarDayFont"))
                             .font(Font.custom("Gilroy-SemiBold", size: 12))
-                        
                         Spacer()
                     }
-                    .padding(.top, geo.size.height * 0.09)
+                    .padding(.top, geo.size.height * 0.186)
                     .padding(.leading, 5)
                     Spacer()
-                    HStack(spacing: geo.size.width * 0.5 * 0.04) {
+                    HStack(spacing: geo.size.width * 0.5 * 0.01) {
                         ForEach(0..<7) { i in
                             DayView(dayName: "FRI", dayNum: 8 + i , isCurrentDay: i == 0)
                         }
                     }
+                    .padding(.top, geo.size.height * 0.1)
                     .padding(.bottom, geo.size.height * 0.1)
                     .padding(.trailing, 5)
                     .frame(width: geo.size.width * 0.75, height: geo.size.height * 0.95)
