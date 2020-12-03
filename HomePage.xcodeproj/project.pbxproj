@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7067E4042578B37C00FB0F6F /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7067E4032578B37B00FB0F6F /* TabBarView.swift */; };
 		F21CC7E0257218B7009094F7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21CC7DF257218B7009094F7 /* AppDelegate.swift */; };
 		F21CC7E2257218B7009094F7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21CC7E1257218B7009094F7 /* SceneDelegate.swift */; };
 		F21CC7E4257218B7009094F7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21CC7E3257218B7009094F7 /* ContentView.swift */; };
@@ -31,6 +32,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7067E4032578B37B00FB0F6F /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
 		F21CC7DC257218B7009094F7 /* HomePage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HomePage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F21CC7DF257218B7009094F7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F21CC7E1257218B7009094F7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -68,6 +70,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7067E4022578B36000FB0F6F /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				7067E4032578B37B00FB0F6F /* TabBarView.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
 		F21CC7D3257218B6009094F7 = {
 			isa = PBXGroup;
 			children = (
@@ -87,6 +97,7 @@
 		F21CC7DE257218B7009094F7 /* HomePage */ = {
 			isa = PBXGroup;
 			children = (
+				7067E4022578B36000FB0F6F /* TabBar */,
 				F28F803225775EB1000A643E /* Event */,
 				F27DEE3E257612E700FBDB8E /* Progress */,
 				F23EEC742573C7B90084CC1D /* Fonts */,
@@ -249,6 +260,7 @@
 				F21CC7E2257218B7009094F7 /* SceneDelegate.swift in Sources */,
 				F28F803425775F1C000A643E /* UpComingEventsView.swift in Sources */,
 				F27DEE482576272B00FBDB8E /* TotalStep.swift in Sources */,
+				7067E4042578B37C00FB0F6F /* TabBarView.swift in Sources */,
 				F21CC7E4257218B7009094F7 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
