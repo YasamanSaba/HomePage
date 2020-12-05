@@ -28,8 +28,10 @@ struct TabBarView: View {
                 Image("HomeTab")
                     .resizable()
                     .aspectRatio(contentMode: .fit)
+                    .overlay(Circle().stroke(lineWidth: 1).foregroundColor(.blue).saturation(5).blur(radius: 0.5) )
                     .frame(width: geo.size.width * 0.18)
                     .position(x: geo.size.width * 0.204, y: geo.size.width * 0.109)
+                    .brightness(0.1)
                 
                 Text("Home")
                     .foregroundColor(ColorPalette.dayFont)
@@ -58,7 +60,7 @@ struct TabBarView_Previews: PreviewProvider {
     static var previews: some View {
         TabBarView()
             .previewLayout(.sizeThatFits)
-            .frame(width: 400, height: 100, alignment: .center)
+            .frame(width: 440, height: 120, alignment: .center)
     }
 }
 

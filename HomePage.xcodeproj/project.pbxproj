@@ -20,7 +20,6 @@
 		F25C3F902574EF59003591B9 /* DayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25C3F8E2574EF59003591B9 /* DayView.swift */; };
 		F25C3F912574EF59003591B9 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25C3F8F2574EF59003591B9 /* CalendarView.swift */; };
 		F25C3F952574EFC0003591B9 /* ColorPalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25C3F942574EFC0003591B9 /* ColorPalette.swift */; };
-		F25C3F982574EFF8003591B9 /* WholeCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25C3F972574EFF8003591B9 /* WholeCalendar.swift */; };
 		F27DEE402576130800FBDB8E /* SummaryProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27DEE3F2576130800FBDB8E /* SummaryProgressView.swift */; };
 		F27DEE442576132D00FBDB8E /* ProcessingStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27DEE432576132D00FBDB8E /* ProcessingStep.swift */; };
 		F27DEE482576272B00FBDB8E /* TotalStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27DEE472576272B00FBDB8E /* TotalStep.swift */; };
@@ -48,7 +47,6 @@
 		F25C3F8E2574EF59003591B9 /* DayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DayView.swift; sourceTree = "<group>"; };
 		F25C3F8F2574EF59003591B9 /* CalendarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
 		F25C3F942574EFC0003591B9 /* ColorPalette.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorPalette.swift; sourceTree = "<group>"; };
-		F25C3F972574EFF8003591B9 /* WholeCalendar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WholeCalendar.swift; sourceTree = "<group>"; };
 		F25C3F9B25751E1F003591B9 /* Gilroy-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-Medium.ttf"; sourceTree = "<group>"; };
 		F25C3F9D25751F10003591B9 /* Gilroy-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-SemiBold.ttf"; sourceTree = "<group>"; };
 		F27DEE3F2576130800FBDB8E /* SummaryProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryProgressView.swift; sourceTree = "<group>"; };
@@ -128,7 +126,6 @@
 				F25C3F8F2574EF59003591B9 /* CalendarView.swift */,
 				F25C3F8E2574EF59003591B9 /* DayView.swift */,
 				F25C3F892574D9AF003591B9 /* CalendarHead.swift */,
-				F25C3F972574EFF8003591B9 /* WholeCalendar.swift */,
 			);
 			path = Calendar;
 			sourceTree = "<group>";
@@ -249,7 +246,6 @@
 			files = (
 				F25C3F902574EF59003591B9 /* DayView.swift in Sources */,
 				F25C3F912574EF59003591B9 /* CalendarView.swift in Sources */,
-				F25C3F982574EFF8003591B9 /* WholeCalendar.swift in Sources */,
 				F25C3F8A2574D9AF003591B9 /* CalendarHead.swift in Sources */,
 				F27DEE442576132D00FBDB8E /* ProcessingStep.swift in Sources */,
 				F27DEE4C25762E2300FBDB8E /* RejectStep.swift in Sources */,
