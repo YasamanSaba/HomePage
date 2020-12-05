@@ -13,6 +13,8 @@ struct ContentView: View {
         GeometryReader { geometry in
             ZStack {
                 ColorPalette.mainBackground
+                    .ignoresSafeArea()
+                    
                 VStack {
                     HStack {
                     Image("CalnedarHeadIcon")
@@ -48,11 +50,21 @@ struct ContentView: View {
                     FirstEventView()
                         .frame(height: geometry.size.height * 0.093)
                         
+                        FirstEventView()
+                            .frame(height: geometry.size.height * 0.093)
                     }
+                    .padding(.leading, 5)
+                    .padding(.trailing, 5)
                     Spacer()
+                    
+                    TabBarView()
+                        .frame(width: geometry.size.width, height: geometry.size.height * 0.15)
+                        
                 }
+                .ignoresSafeArea()
             }
         }
+        
     }
 }
 
