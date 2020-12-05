@@ -31,17 +31,14 @@ struct ContentView: View {
                     
                     HStack {
                     WeatherView()
-                        .frame(width: geometry.size.width * 0.304, height: geometry.size.height * 0.082)
+                        .frame(width: geometry.size.width * 0.304, height: geometry.size.height * 0.1)
                     SummaryProgressView()
-                        .frame(width: geometry.size.width * 0.639 , height: geometry.size.height * 0.082)
+                        .frame(width: geometry.size.width * 0.64 , height: geometry.size.height * 0.1)
                     }
                     
                     UpComingEventsView(eventsCount: $eventsCount)
-                        .frame(height: geometry.size.height * 0.076)
-                        .padding()
-                    
-//                    QuotationView()
-//                        .padding()
+                        .frame(height: geometry.size.height * 0.06)
+                        .padding(5)
                     
                     VStack(spacing: 0) {
                     EventDate()
@@ -52,6 +49,7 @@ struct ContentView: View {
                         .frame(height: geometry.size.height * 0.093)
                         
                     }
+                    Spacer()
                 }
             }
         }

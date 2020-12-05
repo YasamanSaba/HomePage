@@ -9,7 +9,6 @@ import SwiftUI
 
 struct TotalStep: View {
     var body: some View {
-        GeometryReader { geomtry in
         ZStack {
             Circle()
                 .inset(by: 1.5)
@@ -17,18 +16,16 @@ struct TotalStep: View {
                 .foregroundColor(ColorPalette.blueColor)
             
             VStack(spacing: 0) {
-                    Spacer()
-                    Text("250")
-                        .font(.subheadline)
-                        .fontWeight(.medium)
-                        .foregroundColor(ColorPalette.blueColor)
-                    Image("AppliesforTotal")
-                        .resizable()
-                        .frame(width: geomtry.size.width * 0.499 ,height: geomtry.size.height * 0.345)
-                        
-                        Spacer()
-                    
-                }
+                Spacer()
+                Text("250")
+                    .font(.subheadline)
+                    .fontWeight(.medium)
+                    .foregroundColor(ColorPalette.blueColor)
+                Image("AppliesforTotal")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                Spacer()
+                
             }
         }
     }

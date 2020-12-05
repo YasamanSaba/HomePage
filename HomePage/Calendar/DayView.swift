@@ -17,18 +17,19 @@ struct DayView: View {
     var body: some View {
         GeometryReader { geometry in
             VStack(spacing: 0) {
-                RoundedRectangle(cornerRadius: 25)
-                    .frame(width: 1, height: geometry.size.height * 0.1)
-                    .padding(0)
-                    .foregroundColor(isCurrentDay ? ColorPalette.currentDayFont : Color.clear)
+//                RoundedRectangle(cornerRadius: 25)
+//                    .frame(width: 1, height: geometry.size.height * 0.1)
+//                    .padding(0)
+//                    .foregroundColor(isCurrentDay ? ColorPalette.currentDayFont : Color.clear)
                 Text(dayName)
                     .font(.footnote)
                     .foregroundColor(isCurrentDay ? ColorPalette.currentDayFont : ColorPalette.calendarDayFont)
-                    .padding(0)
-                RoundedRectangle(cornerRadius: 25)
-                    .frame(width: 1, height: geometry.size.height * 0.1)
-                    .padding(0)
-                    .foregroundColor(isCurrentDay ? ColorPalette.currentDayFont : Color.clear)
+                    .minimumScaleFactor(0.01)
+                    .padding(1)
+//                RoundedRectangle(cornerRadius: 25)
+//                    .frame(width: 1, height: geometry.size.height * 0.1)
+//                    .padding(0)
+//                    .foregroundColor(isCurrentDay ? ColorPalette.currentDayFont : Color.clear)
                     
                 
                 CalendarCircleView(dayNum: dayNum, isCurrentDay: isCurrentDay, hasInterview: hasInterview, hasTask: hasTask)
@@ -45,7 +46,7 @@ struct DayView_Previews: PreviewProvider {
         Group {
             DayView(dayName: "SAT", dayNum: 28, isCurrentDay: true, hasInterview: true, hasTask: true)
                 .previewLayout(.sizeThatFits)
-                .frame(width: 150, height: 230, alignment: .center)
+                .frame(width: 50, height: 75, alignment: .center)
             DayView(dayName: "MON", dayNum: 29, isCurrentDay: false, hasInterview: false, hasTask: true)
                 .previewLayout(.sizeThatFits)
                 .frame(width: 150, height: 300, alignment: .center)
@@ -63,8 +64,8 @@ struct CalendarCircleView: View {
     var body: some View {
         GeometryReader { geo in
             
-            let leftCircleX = geo.size.height < geo.size.width ? (geo.size.width - geo.size.height) / 2 : 0
-            let rightCircleX = geo.size.height < geo.size.width ? (geo.size.width - (geo.size.width - geo.size.height) / 2) : geo.size.width
+            let leftCircleX = geo.frame(in: .local).size.height < geo.frame(in: .local).size.width ? (geo.frame(in: .local).size.width - geo.frame(in: .local).size.height) / 2 : 0
+            let rightCircleX = geo.frame(in: .local).size.height < geo.frame(in: .local).size.width ? (geo.frame(in: .local).size.width - (geo.frame(in: .local).size.width - geo.frame(in: .local).size.height) / 2) : geo.frame(in: .local).size.width
             
             ZStack {
                 Circle()
@@ -75,18 +76,20 @@ struct CalendarCircleView: View {
                 
                 Text("\(dayNum)")
                     .foregroundColor(isCurrentDay ? ColorPalette.currentDayFont : ColorPalette.calendarDayFont)
+                    .font(.footnote)
+
                 
                     Circle()
                         .fill(hasInterview ? ColorPalette.redColor : Color.clear)
-                        .frame(width: geo.size.width * 0.215)
-                        .position(x: leftCircleX, y: geo.size.height / 2)
+                        .frame(width: geo.frame(in: .local).size.width * 0.21)
+                        .position(x: leftCircleX, y: geo.frame(in: .local).size.height / 2)
                         .mask(Circle())
 
 
                     Circle()
                         .fill(hasTask ? ColorPalette.greenColor : Color.clear)
-                        .frame(width: geo.frame(in: .local).width * 0.215)
-                        .position(x: rightCircleX, y: geo.size.height / 2)
+                        .frame(width: geo.frame(in: .local).width * 0.21)
+                        .position(x: rightCircleX, y: geo.frame(in: .local).size.height / 2)
                         .mask(Circle())
 
                 
