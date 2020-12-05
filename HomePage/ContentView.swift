@@ -8,21 +8,50 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var eventsCount: Int = 6
     var body: some View {
-        GeometryReader { outerGeo in
-            VStack {
-                MyView()
-                    .frame(width: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, height: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                Spacer()
-                ZStack {
-                    RoundedRectangle(cornerRadius: 9)
-                        .frame(width: 400, height: 400, alignment: .center)
-                        .onTapGesture(count: 1, perform: {
-                            print("OuterGeo: w \(outerGeo.size.width) : h \(outerGeo.size.height)")
-                            print("OuterGeo(.local): w \(outerGeo.frame(in: .local).size.width) : h \(outerGeo.frame(in: .local).size.height)")
-                            print("OuterGeo(.global): w \(outerGeo.frame(in: .global).size.width) : h \(outerGeo.frame(in: .global).size.height)")
-                            
-                        })
+        GeometryReader { geometry in
+            ZStack {
+                ColorPalette.mainBackground
+                VStack {
+                    HStack {
+                    Image("CalnedarHeadIcon")
+                        .resizable()
+                        .scaledToFit()
+                        Spacer()
+                    Image("SettingIcon")
+                        .resizable()
+                        .scaledToFit()
+                    }
+                    .frame(width: geometry.size.width * 0.964, height: geometry.size.height * 0.074)
+
+                    CalendarView()
+                        .frame(width: geometry.size.width * 0.964, height: geometry.size.height * 0.082)
+                    
+                    
+                    HStack {
+                    WeatherView()
+                        .frame(width: geometry.size.width * 0.304, height: geometry.size.height * 0.082)
+                    SummaryProgressView()
+                        .frame(width: geometry.size.width * 0.639 , height: geometry.size.height * 0.082)
+                    }
+                    
+                    UpComingEventsView(eventsCount: $eventsCount)
+                        .frame(height: geometry.size.height * 0.076)
+                        .padding()
+                    
+//                    QuotationView()
+//                        .padding()
+                    
+                    VStack(spacing: 0) {
+                    EventDate()
+                        .frame(height: geometry.size.height * 0.05)
+                        
+                    
+                    FirstEventView()
+                        .frame(height: geometry.size.height * 0.093)
+                        
+                    }
                 }
             }
         }
@@ -31,8 +60,15 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
-            .previewLayout(.sizeThatFits)
+        Group {
+            ContentView()
+                .previewDevice(PreviewDevice(rawValue: "iPhone XS Max"))
+                            .previewDisplayName("iPhone XS Max")
+            ContentView()
+                .previewDevice(PreviewDevice(rawValue: "iPhone SE"))
+                            .previewDisplayName("iPhone SE")
+        }
+        
     }
 }
 

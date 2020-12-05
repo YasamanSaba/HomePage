@@ -10,13 +10,16 @@
 		7067E4042578B37C00FB0F6F /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7067E4032578B37B00FB0F6F /* TabBarView.swift */; };
 		F21CC7E0257218B7009094F7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21CC7DF257218B7009094F7 /* AppDelegate.swift */; };
 		F21CC7E2257218B7009094F7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21CC7E1257218B7009094F7 /* SceneDelegate.swift */; };
-		F21CC7E4257218B7009094F7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21CC7E3257218B7009094F7 /* ContentView.swift */; };
 		F21CC7E9257218BA009094F7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F21CC7E8257218BA009094F7 /* Preview Assets.xcassets */; };
 		F21CC7EC257218BA009094F7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F21CC7EA257218BA009094F7 /* LaunchScreen.storyboard */; };
 		F21CC7FD257260BB009094F7 /* ColorExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21CC7FC257260BB009094F7 /* ColorExt.swift */; };
 		F224F2D7257B568D00484434 /* EventCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F224F2D6257B568D00484434 /* EventCellView.swift */; };
 		F224F2DB257B56F400484434 /* QuotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F224F2DA257B56F400484434 /* QuotationView.swift */; };
 		F224F2E0257B573500484434 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F224F2DF257B573500484434 /* Assets.xcassets */; };
+		F224F2E4257B57A200484434 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F224F2E3257B57A200484434 /* ContentView.swift */; };
+		F224F2E9257B580B00484434 /* UpComingEventsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F224F2E8257B580B00484434 /* UpComingEventsView.swift */; };
+		F224F2EC257B642C00484434 /* EventDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F224F2EB257B642C00484434 /* EventDate.swift */; };
+		F224F2F0257B6BB100484434 /* WeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F224F2EF257B6BB100484434 /* WeatherView.swift */; };
 		F23EEC712573B9100084CC1D /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F23EEC702573B9100084CC1D /* Colors.xcassets */; };
 		F25C3F8A2574D9AF003591B9 /* CalendarHead.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25C3F892574D9AF003591B9 /* CalendarHead.swift */; };
 		F25C3F902574EF59003591B9 /* DayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25C3F8E2574EF59003591B9 /* DayView.swift */; };
@@ -28,7 +31,6 @@
 		F27DEE482576272B00FBDB8E /* TotalStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27DEE472576272B00FBDB8E /* TotalStep.swift */; };
 		F27DEE4C25762E2300FBDB8E /* RejectStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27DEE4B25762E2300FBDB8E /* RejectStep.swift */; };
 		F27DEE4E257679CB00FBDB8E /* gilroy-light.otf in Resources */ = {isa = PBXBuildFile; fileRef = F23EEC752573C7E60084CC1D /* gilroy-light.otf */; };
-		F28F803425775F1C000A643E /* UpComingEventsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28F803325775F1C000A643E /* UpComingEventsView.swift */; };
 		F2C8FF8825752331009E8587 /* Gilroy-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F25C3F9D25751F10003591B9 /* Gilroy-SemiBold.ttf */; };
 		F2C8FF8B25752449009E8587 /* Gilroy-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F2C8FF8A25752415009E8587 /* Gilroy-Bold.ttf */; };
 /* End PBXBuildFile section */
@@ -38,7 +40,6 @@
 		F21CC7DC257218B7009094F7 /* HomePage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HomePage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F21CC7DF257218B7009094F7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F21CC7E1257218B7009094F7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F21CC7E3257218B7009094F7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F21CC7E8257218BA009094F7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F21CC7EB257218BA009094F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F21CC7ED257218BA009094F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -46,6 +47,10 @@
 		F224F2D6257B568D00484434 /* EventCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCellView.swift; sourceTree = "<group>"; };
 		F224F2DA257B56F400484434 /* QuotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotationView.swift; sourceTree = "<group>"; };
 		F224F2DF257B573500484434 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F224F2E3257B57A200484434 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F224F2E8257B580B00484434 /* UpComingEventsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpComingEventsView.swift; sourceTree = "<group>"; };
+		F224F2EB257B642C00484434 /* EventDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDate.swift; sourceTree = "<group>"; };
+		F224F2EF257B6BB100484434 /* WeatherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherView.swift; sourceTree = "<group>"; };
 		F23EEC702573B9100084CC1D /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		F23EEC752573C7E60084CC1D /* gilroy-light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "gilroy-light.otf"; sourceTree = "<group>"; };
 		F25C3F892574D9AF003591B9 /* CalendarHead.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CalendarHead.swift; path = HomePage/CalendarHead.swift; sourceTree = SOURCE_ROOT; };
@@ -59,7 +64,6 @@
 		F27DEE432576132D00FBDB8E /* ProcessingStep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessingStep.swift; sourceTree = "<group>"; };
 		F27DEE472576272B00FBDB8E /* TotalStep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalStep.swift; sourceTree = "<group>"; };
 		F27DEE4B25762E2300FBDB8E /* RejectStep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RejectStep.swift; sourceTree = "<group>"; };
-		F28F803325775F1C000A643E /* UpComingEventsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpComingEventsView.swift; sourceTree = "<group>"; };
 		F2C8FF8A25752415009E8587 /* Gilroy-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-Bold.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -101,6 +105,7 @@
 		F21CC7DE257218B7009094F7 /* HomePage */ = {
 			isa = PBXGroup;
 			children = (
+				F224F2EE257B6B8A00484434 /* Weather */,
 				F224F2DF257B573500484434 /* Assets.xcassets */,
 				F224F2D9257B56D500484434 /* Quotation */,
 				F224F2D4257B565400484434 /* Events */,
@@ -110,8 +115,8 @@
 				F23EEC742573C7B90084CC1D /* Fonts */,
 				F21CC80825726E39009094F7 /* Color */,
 				F21CC7DF257218B7009094F7 /* AppDelegate.swift */,
+				F224F2E3257B57A200484434 /* ContentView.swift */,
 				F21CC7E1257218B7009094F7 /* SceneDelegate.swift */,
-				F21CC7E3257218B7009094F7 /* ContentView.swift */,
 				F21CC7EA257218BA009094F7 /* LaunchScreen.storyboard */,
 				F21CC7ED257218BA009094F7 /* Info.plist */,
 				F21CC7E7257218BA009094F7 /* Preview Content */,
@@ -153,6 +158,7 @@
 			isa = PBXGroup;
 			children = (
 				F224F2D6257B568D00484434 /* EventCellView.swift */,
+				F224F2EB257B642C00484434 /* EventDate.swift */,
 			);
 			path = Events;
 			sourceTree = "<group>";
@@ -163,6 +169,14 @@
 				F224F2DA257B56F400484434 /* QuotationView.swift */,
 			);
 			path = Quotation;
+			sourceTree = "<group>";
+		};
+		F224F2EE257B6B8A00484434 /* Weather */ = {
+			isa = PBXGroup;
+			children = (
+				F224F2EF257B6BB100484434 /* WeatherView.swift */,
+			);
+			path = Weather;
 			sourceTree = "<group>";
 		};
 		F23EEC742573C7B90084CC1D /* Fonts */ = {
@@ -190,7 +204,7 @@
 		F28F803225775EB1000A643E /* Event */ = {
 			isa = PBXGroup;
 			children = (
-				F28F803325775F1C000A643E /* UpComingEventsView.swift */,
+				F224F2E8257B580B00484434 /* UpComingEventsView.swift */,
 			);
 			path = Event;
 			sourceTree = "<group>";
@@ -273,19 +287,21 @@
 				F25C3F912574EF59003591B9 /* CalendarView.swift in Sources */,
 				F25C3F982574EFF8003591B9 /* WholeCalendar.swift in Sources */,
 				F25C3F8A2574D9AF003591B9 /* CalendarHead.swift in Sources */,
+				F224F2E9257B580B00484434 /* UpComingEventsView.swift in Sources */,
 				F224F2DB257B56F400484434 /* QuotationView.swift in Sources */,
+				F224F2EC257B642C00484434 /* EventDate.swift in Sources */,
+				F224F2F0257B6BB100484434 /* WeatherView.swift in Sources */,
 				F27DEE442576132D00FBDB8E /* ProcessingStep.swift in Sources */,
 				F27DEE4C25762E2300FBDB8E /* RejectStep.swift in Sources */,
+				F224F2E4257B57A200484434 /* ContentView.swift in Sources */,
 				F25C3F952574EFC0003591B9 /* ColorPalette.swift in Sources */,
 				F21CC7E0257218B7009094F7 /* AppDelegate.swift in Sources */,
 				F21CC7FD257260BB009094F7 /* ColorExt.swift in Sources */,
 				F27DEE402576130800FBDB8E /* SummaryProgressView.swift in Sources */,
 				F21CC7E2257218B7009094F7 /* SceneDelegate.swift in Sources */,
 				F224F2D7257B568D00484434 /* EventCellView.swift in Sources */,
-				F28F803425775F1C000A643E /* UpComingEventsView.swift in Sources */,
 				F27DEE482576272B00FBDB8E /* TotalStep.swift in Sources */,
 				7067E4042578B37C00FB0F6F /* TabBarView.swift in Sources */,
-				F21CC7E4257218B7009094F7 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

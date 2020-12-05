@@ -16,7 +16,9 @@ struct FirstEventView: View {
                     .foregroundColor(ColorPalette.calendarBackground)
                 
                 PuzzleLine()
-                    .stroke()
+                    .fill(ColorPalette.calendarBackground)
+                    .overlay(PuzzleLine()
+                                .stroke())
                 
                 Text("17:30")
                     .font(.footnote)
@@ -41,7 +43,7 @@ struct FirstEventView: View {
                             .font(.footnote)
                             .foregroundColor(ColorPalette.calendarDayFont)
                         
-                        Text("Restaurant Application")
+                        Text(" ")
                             .font(.footnote)
                             .foregroundColor(ColorPalette.calendarDayFont)
                         
@@ -58,10 +60,10 @@ struct FirstEventView: View {
 struct PuzzleLine: Shape {
     func path(in rect: CGRect) -> Path {
         Path { path in
-            path.move(to: CGPoint(x: 0, y: rect.height * 0.091))
-            path.addLine(to: CGPoint(x: rect.width * 0.13, y: rect.height * 0.091))
-            path.addQuadCurve(to: CGPoint(x: rect.width * 0.2, y: rect.height * 0.091), control: CGPoint(x: rect.width * 0.164, y: 0))
-            path.addLine(to: CGPoint(x: rect.width, y: rect.height * 0.091))
+            path.move(to: CGPoint(x: 0, y: 0))
+            path.addLine(to: CGPoint(x: rect.width * 0.13, y: 0))
+            path.addQuadCurve(to: CGPoint(x: rect.width * 0.2, y: 0), control: CGPoint(x: rect.width * 0.164, y: -10))
+            path.addLine(to: CGPoint(x: rect.width, y: 0))
         }
     }
 }
@@ -72,5 +74,6 @@ struct FirstEventView_Previews: PreviewProvider {
         FirstEventView()
             .previewLayout(.sizeThatFits )
             .frame(width: 301.54, height: 63.26, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+            .padding()
     }
 }
