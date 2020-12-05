@@ -11,10 +11,12 @@
 		F21CC7E0257218B7009094F7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21CC7DF257218B7009094F7 /* AppDelegate.swift */; };
 		F21CC7E2257218B7009094F7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21CC7E1257218B7009094F7 /* SceneDelegate.swift */; };
 		F21CC7E4257218B7009094F7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21CC7E3257218B7009094F7 /* ContentView.swift */; };
-		F21CC7E6257218BA009094F7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F21CC7E5257218BA009094F7 /* Assets.xcassets */; };
 		F21CC7E9257218BA009094F7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F21CC7E8257218BA009094F7 /* Preview Assets.xcassets */; };
 		F21CC7EC257218BA009094F7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F21CC7EA257218BA009094F7 /* LaunchScreen.storyboard */; };
 		F21CC7FD257260BB009094F7 /* ColorExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21CC7FC257260BB009094F7 /* ColorExt.swift */; };
+		F224F2D7257B568D00484434 /* EventCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F224F2D6257B568D00484434 /* EventCellView.swift */; };
+		F224F2DB257B56F400484434 /* QuotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F224F2DA257B56F400484434 /* QuotationView.swift */; };
+		F224F2E0257B573500484434 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F224F2DF257B573500484434 /* Assets.xcassets */; };
 		F23EEC712573B9100084CC1D /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F23EEC702573B9100084CC1D /* Colors.xcassets */; };
 		F25C3F8A2574D9AF003591B9 /* CalendarHead.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25C3F892574D9AF003591B9 /* CalendarHead.swift */; };
 		F25C3F902574EF59003591B9 /* DayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25C3F8E2574EF59003591B9 /* DayView.swift */; };
@@ -37,11 +39,13 @@
 		F21CC7DF257218B7009094F7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F21CC7E1257218B7009094F7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		F21CC7E3257218B7009094F7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		F21CC7E5257218BA009094F7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F21CC7E8257218BA009094F7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F21CC7EB257218BA009094F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F21CC7ED257218BA009094F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F21CC7FC257260BB009094F7 /* ColorExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExt.swift; sourceTree = "<group>"; };
+		F224F2D6257B568D00484434 /* EventCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCellView.swift; sourceTree = "<group>"; };
+		F224F2DA257B56F400484434 /* QuotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotationView.swift; sourceTree = "<group>"; };
+		F224F2DF257B573500484434 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F23EEC702573B9100084CC1D /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		F23EEC752573C7E60084CC1D /* gilroy-light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "gilroy-light.otf"; sourceTree = "<group>"; };
 		F25C3F892574D9AF003591B9 /* CalendarHead.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CalendarHead.swift; path = HomePage/CalendarHead.swift; sourceTree = SOURCE_ROOT; };
@@ -97,6 +101,9 @@
 		F21CC7DE257218B7009094F7 /* HomePage */ = {
 			isa = PBXGroup;
 			children = (
+				F224F2DF257B573500484434 /* Assets.xcassets */,
+				F224F2D9257B56D500484434 /* Quotation */,
+				F224F2D4257B565400484434 /* Events */,
 				7067E4022578B36000FB0F6F /* TabBar */,
 				F28F803225775EB1000A643E /* Event */,
 				F27DEE3E257612E700FBDB8E /* Progress */,
@@ -105,7 +112,6 @@
 				F21CC7DF257218B7009094F7 /* AppDelegate.swift */,
 				F21CC7E1257218B7009094F7 /* SceneDelegate.swift */,
 				F21CC7E3257218B7009094F7 /* ContentView.swift */,
-				F21CC7E5257218BA009094F7 /* Assets.xcassets */,
 				F21CC7EA257218BA009094F7 /* LaunchScreen.storyboard */,
 				F21CC7ED257218BA009094F7 /* Info.plist */,
 				F21CC7E7257218BA009094F7 /* Preview Content */,
@@ -141,6 +147,22 @@
 				F21CC7FC257260BB009094F7 /* ColorExt.swift */,
 			);
 			path = Color;
+			sourceTree = "<group>";
+		};
+		F224F2D4257B565400484434 /* Events */ = {
+			isa = PBXGroup;
+			children = (
+				F224F2D6257B568D00484434 /* EventCellView.swift */,
+			);
+			path = Events;
+			sourceTree = "<group>";
+		};
+		F224F2D9257B56D500484434 /* Quotation */ = {
+			isa = PBXGroup;
+			children = (
+				F224F2DA257B56F400484434 /* QuotationView.swift */,
+			);
+			path = Quotation;
 			sourceTree = "<group>";
 		};
 		F23EEC742573C7B90084CC1D /* Fonts */ = {
@@ -234,9 +256,9 @@
 				F23EEC712573B9100084CC1D /* Colors.xcassets in Resources */,
 				F21CC7E9257218BA009094F7 /* Preview Assets.xcassets in Resources */,
 				F2C8FF8B25752449009E8587 /* Gilroy-Bold.ttf in Resources */,
+				F224F2E0257B573500484434 /* Assets.xcassets in Resources */,
 				F27DEE4E257679CB00FBDB8E /* gilroy-light.otf in Resources */,
 				F2C8FF8825752331009E8587 /* Gilroy-SemiBold.ttf in Resources */,
-				F21CC7E6257218BA009094F7 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,6 +273,7 @@
 				F25C3F912574EF59003591B9 /* CalendarView.swift in Sources */,
 				F25C3F982574EFF8003591B9 /* WholeCalendar.swift in Sources */,
 				F25C3F8A2574D9AF003591B9 /* CalendarHead.swift in Sources */,
+				F224F2DB257B56F400484434 /* QuotationView.swift in Sources */,
 				F27DEE442576132D00FBDB8E /* ProcessingStep.swift in Sources */,
 				F27DEE4C25762E2300FBDB8E /* RejectStep.swift in Sources */,
 				F25C3F952574EFC0003591B9 /* ColorPalette.swift in Sources */,
@@ -258,6 +281,7 @@
 				F21CC7FD257260BB009094F7 /* ColorExt.swift in Sources */,
 				F27DEE402576130800FBDB8E /* SummaryProgressView.swift in Sources */,
 				F21CC7E2257218B7009094F7 /* SceneDelegate.swift in Sources */,
+				F224F2D7257B568D00484434 /* EventCellView.swift in Sources */,
 				F28F803425775F1C000A643E /* UpComingEventsView.swift in Sources */,
 				F27DEE482576272B00FBDB8E /* TotalStep.swift in Sources */,
 				7067E4042578B37C00FB0F6F /* TabBarView.swift in Sources */,
