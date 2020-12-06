@@ -16,6 +16,7 @@ struct ContentView: View {
                     .ignoresSafeArea()
                     
                 VStack {
+                    VStack(spacing: 0) {
                     HStack {
                     Image("CalnedarHeadIcon")
                         .resizable()
@@ -25,12 +26,12 @@ struct ContentView: View {
                         .resizable()
                         .scaledToFit()
                     }
-                    .frame(width: geometry.size.width * 0.924, height: geometry.size.height * 0.074)
+                    .frame(width: geometry.size.width * 0.904, height: geometry.size.height * 0.074)
 
                     CalendarView()
                         .frame(width: geometry.size.width * 0.964, height: geometry.size.height * 0.082)
                     
-                    
+                    }
                     HStack {
                     WeatherView()
                         .frame(width: geometry.size.width * 0.303, height: geometry.size.height * 0.082)
@@ -39,9 +40,12 @@ struct ContentView: View {
                         .frame(width: geometry.size.width * 0.639 , height: geometry.size.height * 0.082)
                     }
                     
+                    
                     UpComingEventsView(eventsCount: $eventsCount)
                         .frame(height: geometry.size.height * 0.06)
                         .padding(5)
+                        .padding(.top, 20)
+                        .zIndex(1)
                     
                     VStack(spacing: 0) {
                     EventDate()
@@ -54,8 +58,10 @@ struct ContentView: View {
                         FirstEventView()
                             .frame(height: geometry.size.height * 0.093)
                     }
-                    .padding(.leading, 5)
-                    .padding(.trailing, 5)
+                    .padding([.leading, .trailing], 6)
+                    .padding(.top, -25)
+                    
+                
                     Spacer()
                     
                     TabBarView()
@@ -63,6 +69,7 @@ struct ContentView: View {
                         
                 }
                 .ignoresSafeArea()
+                .padding(.top, /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/)
             }
         }
         
