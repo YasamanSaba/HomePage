@@ -14,11 +14,11 @@ struct AddView: View {
                 ZStack {
                     RoundedRectangle(cornerRadius: 25.0)
                         .foregroundColor(ColorPalette.dayBackground)
-                    VStack (alignment: .leading, spacing: geo.size.width * 0.0692) {
+                    VStack (alignment: .leading) {
                         Text("ADD NEW")
                             .font(.subheadline)
                             .foregroundColor(ColorPalette.blueColor)
-                        HStack {
+                        HStack(spacing: geo.size.width * 0.0692) {
                             VStack {
                                 Image("AddApply")
                                     .resizable()
@@ -78,7 +78,7 @@ struct AddView_Previews: PreviewProvider {
     static var previews: some View {
         AddView()
             .previewLayout(.sizeThatFits)
-            .frame(height: 250)
+            .frame(width:446 ,height: 244)
             .padding()
     }
 }
