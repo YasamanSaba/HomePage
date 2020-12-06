@@ -33,7 +33,7 @@ struct ContentView: View {
                     
                     HStack {
                     WeatherView()
-                        .frame(width: geometry.size.width * 0.304, height: geometry.size.height * 0.082)
+                        .frame(width: geometry.size.width * 0.303, height: geometry.size.height * 0.082)
 //                    SummaryProgressView()
                         SummaryView()
                         .frame(width: geometry.size.width * 0.639 , height: geometry.size.height * 0.082)
