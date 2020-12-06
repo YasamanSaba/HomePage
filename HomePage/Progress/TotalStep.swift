@@ -9,27 +9,31 @@ import SwiftUI
 
 struct TotalStep: View {
     var body: some View {
-        ZStack {
-            Circle()
-                .inset(by: 1.5)
-                .stroke(lineWidth: 3)
-                .foregroundColor(ColorPalette.blueColor)
-            
-            VStack(spacing: 0) {
-                Spacer()
-                Text("250")
-                    .font(.subheadline)
-                    .fontWeight(.medium)
+        GeometryReader { geometry in
+            ZStack {
+                Circle()
+                    .inset(by: 1.5)
+                    .stroke(lineWidth: 3)
                     .foregroundColor(ColorPalette.blueColor)
-                Image("AppliesforTotal")
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
-                Spacer()
                 
+                VStack(spacing: 0) {
+                    Spacer()
+                    Text("250")
+                        .font(.subheadline)
+                        .fontWeight(.medium)
+                        .foregroundColor(ColorPalette.blueColor)
+                    Image("AppliesforTotal")
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .frame(width: geometry.size.width * 0.501)
+                    
+                    Spacer()
+                }
             }
         }
     }
 }
+
 
 struct TotalStep_Previews: PreviewProvider {
     static var previews: some View {

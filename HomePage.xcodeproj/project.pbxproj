@@ -32,6 +32,7 @@
 		F27DEE482576272B00FBDB8E /* TotalStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27DEE472576272B00FBDB8E /* TotalStep.swift */; };
 		F27DEE4C25762E2300FBDB8E /* RejectStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27DEE4B25762E2300FBDB8E /* RejectStep.swift */; };
 		F27DEE4E257679CB00FBDB8E /* gilroy-light.otf in Resources */ = {isa = PBXBuildFile; fileRef = F23EEC752573C7E60084CC1D /* gilroy-light.otf */; };
+		F2995661257B88CD0092F667 /* SummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2995660257B88CD0092F667 /* SummaryView.swift */; };
 		F2C8FF8825752331009E8587 /* Gilroy-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F25C3F9D25751F10003591B9 /* Gilroy-SemiBold.ttf */; };
 		F2C8FF8B25752449009E8587 /* Gilroy-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F2C8FF8A25752415009E8587 /* Gilroy-Bold.ttf */; };
 /* End PBXBuildFile section */
@@ -66,6 +67,7 @@
 		F27DEE432576132D00FBDB8E /* ProcessingStep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessingStep.swift; sourceTree = "<group>"; };
 		F27DEE472576272B00FBDB8E /* TotalStep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalStep.swift; sourceTree = "<group>"; };
 		F27DEE4B25762E2300FBDB8E /* RejectStep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RejectStep.swift; sourceTree = "<group>"; };
+		F2995660257B88CD0092F667 /* SummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryView.swift; sourceTree = "<group>"; };
 		F2C8FF8A25752415009E8587 /* Gilroy-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-Bold.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -208,6 +210,7 @@
 				F27DEE432576132D00FBDB8E /* ProcessingStep.swift */,
 				F27DEE472576272B00FBDB8E /* TotalStep.swift */,
 				F27DEE4B25762E2300FBDB8E /* RejectStep.swift */,
+				F2995660257B88CD0092F667 /* SummaryView.swift */,
 			);
 			path = Progress;
 			sourceTree = "<group>";
@@ -305,6 +308,7 @@
 				F27DEE4C25762E2300FBDB8E /* RejectStep.swift in Sources */,
 				F224F2E4257B57A200484434 /* ContentView.swift in Sources */,
 				F25C3F952574EFC0003591B9 /* ColorPalette.swift in Sources */,
+				F2995661257B88CD0092F667 /* SummaryView.swift in Sources */,
 				F21CC7E0257218B7009094F7 /* AppDelegate.swift in Sources */,
 				70F7A618257CA0F400E16076 /* AddView.swift in Sources */,
 				F21CC7FD257260BB009094F7 /* ColorExt.swift in Sources */,
