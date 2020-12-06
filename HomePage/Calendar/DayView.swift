@@ -23,7 +23,7 @@ struct DayView: View {
 //                    .foregroundColor(isCurrentDay ? ColorPalette.currentDayFont : Color.clear)
                 Text(dayName)
                     .font(.footnote)
-                    .foregroundColor(isCurrentDay ? ColorPalette.currentDayFont : ColorPalette.calendarDayFont)
+                    .foregroundColor(isCurrentDay ? ColorPalette.blueColor : ColorPalette.calendarDayFont)
                     .minimumScaleFactor(0.01)
                     .padding(1)
 //                RoundedRectangle(cornerRadius: 25)
@@ -75,7 +75,7 @@ struct CalendarCircleView: View {
                                     .fill(ColorPalette.dayBackground))
                 
                 Text("\(dayNum)")
-                    .foregroundColor(isCurrentDay ? ColorPalette.currentDayFont : ColorPalette.calendarDayFont)
+                    .foregroundColor(isCurrentDay ? ColorPalette.blueColor : ColorPalette.calendarDayFont)
                     .font(.footnote)
 
                 
