@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		7067E4042578B37C00FB0F6F /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7067E4032578B37B00FB0F6F /* TabBarView.swift */; };
+		70F7A613257BA01C00E16076 /* SingleDayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70F7A612257BA01C00E16076 /* SingleDayView.swift */; };
 		F21CC7E0257218B7009094F7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21CC7DF257218B7009094F7 /* AppDelegate.swift */; };
 		F21CC7E2257218B7009094F7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21CC7E1257218B7009094F7 /* SceneDelegate.swift */; };
 		F21CC7E9257218BA009094F7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F21CC7E8257218BA009094F7 /* Preview Assets.xcassets */; };
@@ -37,6 +38,7 @@
 
 /* Begin PBXFileReference section */
 		7067E4032578B37B00FB0F6F /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
+		70F7A612257BA01C00E16076 /* SingleDayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleDayView.swift; sourceTree = "<group>"; };
 		F21CC7DC257218B7009094F7 /* HomePage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HomePage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F21CC7DF257218B7009094F7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F21CC7E1257218B7009094F7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -136,6 +138,7 @@
 		F21CC8022572620B009094F7 /* Calendar */ = {
 			isa = PBXGroup;
 			children = (
+				70F7A612257BA01C00E16076 /* SingleDayView.swift */,
 				F25C3F8F2574EF59003591B9 /* CalendarView.swift */,
 				F25C3F8E2574EF59003591B9 /* DayView.swift */,
 				F25C3F892574D9AF003591B9 /* CalendarHead.swift */,
@@ -301,6 +304,7 @@
 				F21CC7E2257218B7009094F7 /* SceneDelegate.swift in Sources */,
 				F224F2D7257B568D00484434 /* EventCellView.swift in Sources */,
 				F27DEE482576272B00FBDB8E /* TotalStep.swift in Sources */,
+				70F7A613257BA01C00E16076 /* SingleDayView.swift in Sources */,
 				7067E4042578B37C00FB0F6F /* TabBarView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

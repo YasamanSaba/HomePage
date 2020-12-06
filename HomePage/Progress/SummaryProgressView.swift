@@ -14,44 +14,47 @@ struct SummaryProgressView: View {
                 
                 RoundedRectangle(cornerRadius: 9)
                     .fill(ColorPalette.summaryBackground)
-                HStack(spacing: 2) {
-                    Spacer()
+                HStack(alignment: .myAlignment, spacing: 2) {
+
                     VStack {
                         ProcessingStep()
-                            .frame(width: geomtry.size.height * 0.476, height: geomtry.size.height * 0.476)
-
+                            .frame(width: geomtry.size.height * 0.5, height: geomtry.size.height * 0.5)
+                            .alignmentGuide(.myAlignment) { d in d[VerticalAlignment.center]}
+                        
+                        Text("In Progress")
+                            .font(.custom("gilroy-light", size: 11))
+                            .foregroundColor(ColorPalette.calendarDayFont)
                     }
+                    
                     
                     RoundedRectangle(cornerRadius: 25)
                         .foregroundColor(ColorPalette.blueColor)
-                        .frame(width: geomtry.size.width * 0.157, height: 3, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                   
+                        .frame(width: geomtry.size.width * 0.16, height: 3)
+                        .alignmentGuide(.myAlignment) { d in d[VerticalAlignment.center]}
                     
                     TotalStep()
-                        .frame(width: geomtry.size.height * 0.7, height: geomtry.size.height * 0.7)
-                    
+                        .frame(width: geomtry.size.height * 0.6, height: geomtry.size.height * 0.6)
+                        .alignmentGuide(.myAlignment) { d in d[VerticalAlignment.center]}
+                        
                     RoundedRectangle(cornerRadius: 25.0)
                         .foregroundColor(ColorPalette.blueColor)
-                        .frame(width: geomtry.size.width * 0.157, height: 3, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                        .frame(width: geomtry.size.width * 0.16, height: 3)
+                        .alignmentGuide(.myAlignment) { d in d[VerticalAlignment.center]}
+                
+                    
                     
                     VStack {
                         RejectStep()
-                            .frame(width: geomtry.size.height * 0.476, height: geomtry.size.height * 0.476)
-                        
+                            .frame(width: geomtry.size.height * 0.5, height: geomtry.size.height * 0.5)
+                            .alignmentGuide(.myAlignment) { d in d[VerticalAlignment.center]}
+                        Text("Rejected")
+                            .font(.custom("gilroy-light", size: 11))
+                            .foregroundColor(ColorPalette.calendarDayFont)
+                            //.position(x: geomtry.size.width - geomtry.size.width * 0.172, y: geomtry.size.height * 0.833)
                     }
-                    Spacer()
+                        
                     
                 }
-                
-                Text("In Progress")
-                    .font(.custom("gilroy-light", size: 11))
-                    .foregroundColor(ColorPalette.calendarDayFont)
-                    .position(x: geomtry.size.width * 0.172, y: geomtry.size.height * 0.833)
-                
-                Text("Rejected")
-                    .font(.custom("gilroy-light", size: 11))
-                    .foregroundColor(ColorPalette.calendarDayFont)
-                    .position(x: geomtry.size.width - geomtry.size.width * 0.172, y: geomtry.size.height * 0.833)
                 
             }
             
@@ -66,6 +69,17 @@ struct ProgressView_Previews: PreviewProvider {
     static var previews: some View {
         SummaryProgressView()
             .previewLayout(.sizeThatFits)
-            .frame(width: 300, height: 81, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+            .frame(width: 300, height: 100, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
     }
+}
+
+
+extension VerticalAlignment {
+    private enum MyAlignment: AlignmentID {
+        static func defaultValue(in context: ViewDimensions) -> CGFloat {
+            return context[VerticalAlignment.center]
+        }
+    }
+    
+    static let myAlignment = VerticalAlignment(MyAlignment.self)
 }
