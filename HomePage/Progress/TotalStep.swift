@@ -22,9 +22,12 @@ struct TotalStep: View {
                         .font(.subheadline)
                         .fontWeight(.medium)
                         .foregroundColor(ColorPalette.blueColor)
+                        .padding(2)
+                
                     Image("AppliesforTotal")
                         .resizable()
                         .frame(width: geomtry.size.width * 0.499 ,height: geomtry.size.height * 0.345)
+                        .padding(2)
                         
                         Spacer()
                     

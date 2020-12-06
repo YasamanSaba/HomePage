@@ -29,6 +29,7 @@ struct SummaryProgressView: View {
                     
                     TotalStep()
                         .frame(width: geomtry.size.height * 0.7, height: geomtry.size.height * 0.7)
+                    
                     RoundedRectangle(cornerRadius: 25.0)
                         .foregroundColor(ColorPalette.blueColor)
                         .frame(width: geomtry.size.width * 0.157, height: 3, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)

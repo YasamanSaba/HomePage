@@ -27,6 +27,7 @@ struct RejectStep: View {
                         .font(.footnote)
                         .fontWeight(.medium)
                         .foregroundColor(ColorPalette.whiteColor)
+                        .padding(2)
                     
                     
                     Image("CrossIcon")

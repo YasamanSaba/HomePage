@@ -13,6 +13,7 @@ struct ContentView: View {
         GeometryReader { geometry in
             ZStack {
                 ColorPalette.mainBackground
+                    .ignoresSafeArea(.all, edges: .all)
                 VStack {
                     HStack {
                     Image("CalnedarHeadIcon")
@@ -23,7 +24,7 @@ struct ContentView: View {
                         .resizable()
                         .scaledToFit()
                     }
-                    .frame(width: geometry.size.width * 0.964, height: geometry.size.height * 0.074)
+                    .frame(width: geometry.size.width * 0.924, height: geometry.size.height * 0.074)
 
                     CalendarView()
                         .frame(width: geometry.size.width * 0.964, height: geometry.size.height * 0.082)
@@ -32,7 +33,8 @@ struct ContentView: View {
                     HStack {
                     WeatherView()
                         .frame(width: geometry.size.width * 0.304, height: geometry.size.height * 0.082)
-                    SummaryProgressView()
+//                    SummaryProgressView()
+                        SummaryView()
                         .frame(width: geometry.size.width * 0.639 , height: geometry.size.height * 0.082)
                     }
                     
@@ -72,15 +74,3 @@ struct ContentView_Previews: PreviewProvider {
     }
 }
 
-struct MyView: View {
-    var body: some View {
-        GeometryReader { geo in
-            RoundedRectangle(cornerRadius: 9)
-                .onTapGesture(count: /*@START_MENU_TOKEN@*/1/*@END_MENU_TOKEN@*/, perform: {
-                    print("InnerGeo: w \(geo.size.width) : h \(geo.size.height)")
-                    print("InnerGeo(.local): w \(geo.frame(in: .local).size.width) : h \(geo.frame(in: .local).size.height)")
-                    print("InnerGeo(.global): w \(geo.frame(in: .global).size.width) : h \(geo.frame(in: .global).size.height)")
-                })
-        }
-    }
-}
