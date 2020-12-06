@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		7067E4042578B37C00FB0F6F /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7067E4032578B37B00FB0F6F /* TabBarView.swift */; };
 		70F7A613257BA01C00E16076 /* SingleDayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70F7A612257BA01C00E16076 /* SingleDayView.swift */; };
+		70F7A618257CA0F400E16076 /* AddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70F7A617257CA0F400E16076 /* AddView.swift */; };
 		F21CC7E0257218B7009094F7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21CC7DF257218B7009094F7 /* AppDelegate.swift */; };
 		F21CC7E2257218B7009094F7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21CC7E1257218B7009094F7 /* SceneDelegate.swift */; };
 		F21CC7E9257218BA009094F7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F21CC7E8257218BA009094F7 /* Preview Assets.xcassets */; };
@@ -38,6 +39,7 @@
 /* Begin PBXFileReference section */
 		7067E4032578B37B00FB0F6F /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
 		70F7A612257BA01C00E16076 /* SingleDayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleDayView.swift; sourceTree = "<group>"; };
+		70F7A617257CA0F400E16076 /* AddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddView.swift; sourceTree = "<group>"; };
 		F21CC7DC257218B7009094F7 /* HomePage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HomePage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F21CC7DF257218B7009094F7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F21CC7E1257218B7009094F7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -86,6 +88,14 @@
 			path = TabBar;
 			sourceTree = "<group>";
 		};
+		70F7A616257CA0AD00E16076 /* Add */ = {
+			isa = PBXGroup;
+			children = (
+				70F7A617257CA0F400E16076 /* AddView.swift */,
+			);
+			path = Add;
+			sourceTree = "<group>";
+		};
 		F21CC7D3257218B6009094F7 = {
 			isa = PBXGroup;
 			children = (
@@ -105,6 +115,7 @@
 		F21CC7DE257218B7009094F7 /* HomePage */ = {
 			isa = PBXGroup;
 			children = (
+				70F7A616257CA0AD00E16076 /* Add */,
 				F224F2EE257B6B8A00484434 /* Weather */,
 				F224F2DF257B573500484434 /* Assets.xcassets */,
 				F224F2D9257B56D500484434 /* Quotation */,
@@ -295,6 +306,7 @@
 				F224F2E4257B57A200484434 /* ContentView.swift in Sources */,
 				F25C3F952574EFC0003591B9 /* ColorPalette.swift in Sources */,
 				F21CC7E0257218B7009094F7 /* AppDelegate.swift in Sources */,
+				70F7A618257CA0F400E16076 /* AddView.swift in Sources */,
 				F21CC7FD257260BB009094F7 /* ColorExt.swift in Sources */,
 				F27DEE402576130800FBDB8E /* SummaryProgressView.swift in Sources */,
 				F21CC7E2257218B7009094F7 /* SceneDelegate.swift in Sources */,
