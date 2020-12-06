@@ -29,4 +29,7 @@ struct ColorPalette {
     // MARK: - Events
     static let eventGradient1: Color = Color("EventGradient1")
     static let eventGradient2: Color = Color("EventGradient2")
+    
+    // MARK: - Add New
+    static let addNewFont: Color = Color("AddNewFont")
 }

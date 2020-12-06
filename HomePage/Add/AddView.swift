@@ -3,7 +3,7 @@
 //  HomePage
 //
 //  Created by Sam Javadizadeh on 12/6/20.
-//
+//  W:2238 H:1228
 
 import SwiftUI
 
@@ -13,9 +13,10 @@ struct AddView: View {
             VStack {
                 ZStack {
                     RoundedRectangle(cornerRadius: 25.0)
-                        .foregroundColor(ColorPalette.summaryBackground)
-                    VStack (alignment: .leading) {
-                        Text("Add New")
+                        .foregroundColor(ColorPalette.dayBackground)
+                    VStack (alignment: .leading, spacing: geo.size.width * 0.0692) {
+                        Text("ADD NEW")
+                            .font(.subheadline)
                             .foregroundColor(ColorPalette.blueColor)
                         HStack {
                             VStack {
@@ -23,7 +24,8 @@ struct AddView: View {
                                     .resizable()
                                     .aspectRatio(contentMode: .fit)
                                 Text("Apply")
-                                    .foregroundColor(ColorPalette.whiteColor)
+                                    .font(.subheadline)
+                                    .foregroundColor(ColorPalette.addNewFont)
                                     .offset(x: -geo.size.width * 0.011)
                             }
                             VStack {
@@ -31,7 +33,8 @@ struct AddView: View {
                                     .resizable()
                                     .aspectRatio(contentMode: .fit)
                                 Text("Interview")
-                                    .foregroundColor(ColorPalette.dayFont)
+                                    .font(.subheadline)
+                                    .foregroundColor(ColorPalette.addNewFont)
                                     .offset(x: -geo.size.width * 0.011)
                             }
                             VStack {
@@ -39,7 +42,8 @@ struct AddView: View {
                                     .resizable()
                                     .aspectRatio(contentMode: .fit)
                                 Text("Task")
-                                    .foregroundColor(ColorPalette.dayFont)
+                                    .font(.subheadline)
+                                    .foregroundColor(ColorPalette.addNewFont)
                                     .offset(x: -geo.size.width * 0.011)
                             }
                             VStack {
@@ -47,22 +51,24 @@ struct AddView: View {
                                     .resizable()
                                     .aspectRatio(contentMode: .fit)
                                 Text("Resume")
-                                    .foregroundColor(ColorPalette.dayFont)
+                                    .font(.subheadline)
+                                    .foregroundColor(ColorPalette.addNewFont)
                                     .offset(x: -geo.size.width * 0.011)
                             }
                         }
                     }
-                    .padding()
+                    .padding(geo.size.width * 0.0277)
                 }
-                .frame(height: geo.size.height * 0.662)
+                .frame(height: geo.size.height * 0.6693)
                 ZStack {
                     RoundedRectangle(cornerRadius: 25.0)
                         .foregroundColor(ColorPalette.summaryBackground)
                     Text("Cancel")
                         .foregroundColor(ColorPalette.blueColor)
-                        .fontWeight(.bold)
+                        .font(.title3)
+                        .fontWeight(.medium)
                 }
-                .frame(height: geo.size.height * 0.289)
+                .frame(height: geo.size.height * 0.2899)
             }
         }
     }
